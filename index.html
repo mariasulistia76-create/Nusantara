@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Craft - Karya Terbaik Anak Bangsa</title>
+    <meta name="description" content="Toko online eksklusif menyediakan produk lokal asli Indonesia terbaik. Batik, kerajinan tangan, dan dekorasi rumah bergaya Nusantara modern.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                Nusantara<span>Craft</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#collection">Koleksi</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <button class="icon-btn search-btn" aria-label="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Cart">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <img src="hero_nusantara.jpg" alt="Warisan Budaya Indonesia" id="hero-img">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">Estetika Warisan Luhur</span>
+            <h1>Sentuhan Modern <br> Budaya Nusantara</h1>
+            <p>Temukan koleksi kurasi terbaik dari pengrajin lokal Indonesia. Batik, tenun, dan kerajinan tangan yang bercerita.</p>
+            <div class="hero-buttons">
+                <a href="#collection" class="btn btn-primary">Belanja Sekarang</a>
+                <a href="#about" class="btn btn-outline">Cerita Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-card">
+                <div class="icon-box">
+                    <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+                <h3>100% Asli Lokal</h3>
+                <p>Langsung dari tangan pengrajin desa di seluruh pelosok negeri.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+                <h3>Bahan Alami</h3>
+                <p>Menggunakan material ramah lingkungan dan berkelanjutan.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <h3>Dampak Sosial</h3>
+                <p>Setiap pembelian mendukung ekonomi kreatif pengerajin kecil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="collection" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Koleksi Pilihan</span>
+                <h2>Produk Unggulan</h2>
+                <p>Dikurasikan dengan cinta untuk gaya hidup modern Anda.</p>
+            </div>
+
+            <!-- Categories Filter -->
+            <div class="categories-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="fashion">Busana</button>
+                <button class="filter-btn" data-filter="craft">Kriya</button>
+                <button class="filter-btn" data-filter="decor">Dekorasi</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be injected by JS -->
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="btn btn-secondary">Lihat Semua Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story/About Section -->
+    <section id="about" class="section about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="craftsman.jpg" alt="Pengrajin Sedang Bekerja">
+            </div>
+            <div class="about-content">
+                <span class="section-tag">Tentang Kami</span>
+                <h2>Melestarikan Tradisi Dalam Tiap Goresan</h2>
+                <p>NusantaraCraft hadir untuk menjembatani keindahan warisan budaya Indonesia dengan gaya hidup modern masa kini. Kami percaya bahwa setiap produk memiliki jiwa dan cerita yang layak didengar.</p>
+                <p>Kami bekerja sama langsung dengan lebih dari 50 komunitas pengrajin dari Sabang sampai Merauke.</p>
+                <a href="#" class="item-link">Pelajari Visi Kami <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container newsletter-content">
+            <h2>Dapatkan Penawaran Eksklusif</h2>
+            <p>Bergabunglah dengan komunitas kami dan dapatkan diskon 10% untuk pembelian pertama.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Alamat Email Anda" required>
+                <button type="submit" class="btn btn-primary">Berlangganan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Nusantara<span>Craft</span></a>
+                <p>Platform kurasi produk lokal premium Indonesia. Membawa kehangatan budaya ke rumah Anda.</p>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Belanja</h4>
+                <ul>
+                    <li><a href="#">Koleksi Baru</a></li>
+                    <li><a href="#">Terlaris</a></li>
+                    <li><a href="#">Kategori</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Bantuan</h4>
+                <ul>
+                    <li><a href="#">Konfirmasi Pembayaran</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><ion-icon name="location-outline"></ion-icon> Jakarta, Indonesia</li>
+                    <li><ion-icon name="mail-outline"></ion-icon> hello@nusantaracraft.id</li>
+                    <li><ion-icon name="call-outline"></ion-icon> +62 812 3456 7890</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 NusantaraCraft. Made with ❤️ in Indonesia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
